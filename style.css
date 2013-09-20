@@ -1,0 +1,76 @@
+.wrapper{
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: 
+}
+
+.container {
+	width:35%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: .5% 1% 1% 1%;
+	background: linear-gradient(to top, white, rgba(0,0,0,0.1));
+	border: 1px solid rgba(0,0,0,0.1);
+}
+
+.container h1, .container h3, .container h4{
+	font-family: Helvetica, sans-serif;
+	font-weight: bolder;
+	text-align: center;
+}
+
+.container > div h4{
+	text-align: center;
+	border: 1px solid rgba(0,0,0,0.1);
+	background-color: gray;
+	color: white;
+	font-size: 20px;
+	width:25%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.listing{
+	text-align: center;
+}
+
+.listing li{
+	display: inline-block;
+	font-family: Helvetica, sans-serif;
+	font-size: 14px;
+	text-align: center;
+}
+
+.listing input{
+	border: none;
+	border-bottom: 1px solid gray;
+	height: 35px;
+	width: 45px;
+	font-size: 14px;
+	background-color: rgba(0,0,0,0);
+}
+
+#b{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.button{
+	font-size: 16px;
+	background-color: yellow;
+	border-radius: 5%;
+	border: 1px solid black;
+	box-shadow: 5px 5px gray;
+	width: 100px;
+	margin-top: 2%;
+}
+
+.button:active{
+	background-color: orange;
+}
+
+#runButton{
+	margin-right: 2%;
+}

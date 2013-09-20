@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<title>Quick Pace Calculator</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+
+	<body>
+		<div class="wrapper">
+		<div class="container">
+			<h1>Pace Calculator</h1>
+				<div id="info">
+				<div id="pace">	
+					<h3>Pace:</h3> 
+						<ul class="listing" id="pace-list">
+							<li class="pace input-list">Time (HMS): <input type="number" name="paceH" id="paceHour" class="info"></li>
+							<li class="pace input-list">: <input type="number" name="paceM" id="paceMin" class="info"></li>
+							<li class="pace input-list">: <input type="number" name="paceS" id="paceSec" class="info"></li>
+						</ul>
+						<p></p>
+				</div>
+				
+				<div id="distance">	
+					<h3>Distance:</h3> 
+						<ul class="listing" id="dist-list">
+							<li class="dist input-list">Miles/Kms: <input type="number" name="dis" id="dist" class="info"></li>
+						</ul>
+						<p></p>
+				</div>
+
+				<div id="totalTime">
+					<h3>Total Time:</h3> 
+						<ul class="listing" id="tt-list">
+							<li class="ttime input-list">Time (HMS): <input type="number" name="totaltH" id="ttHour" class="info"></li>
+							<li class="ttime input-list">: <input type="number" name="totaltM" id="ttMin" class="info"></li>
+							<li class="ttime input-list">: <input type="number" name="totaltS" id="ttSec" class="info"></li>
+						</ul>
+						<p></p>
+				</div>	
+		
+				</div>
+			
+			<div id="b">
+		 		<input type="button" class="button" id="runButton" value="Run">
+		 		<input type="reset" class="button" id="resetButton" value="Reset">
+			</div>
+
+		</div>
+		<div>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="pacejq.js"></script>
+	</body>
+
+</html>
