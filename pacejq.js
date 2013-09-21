@@ -4,21 +4,17 @@ $(document).ready(function(){
 
 $("#runButton").on("click", function(){
 
-	var paceHourV = parseInt($("#paceHour").val());
-	var paceMinV = parseInt($("#paceMin").val());
-	var paceSecV = parseInt($("#paceSec").val());
-	var distanceV = parseInt($("#dist").val());
-	var ttHourV = parseInt($("#ttHour").val());
-	var ttMinV = parseInt($("#ttMin").val());
-	var ttSecV = parseInt($("#ttSec").val());
+	var paceHourV = $("#paceHour").val();
+	var paceMinV = $("#paceMin").val();
+	var paceSecV = parseInt($("#paceSec").val())||0;
+	var distanceV = $("#dist").val();
+	var ttHourV = $("#ttHour").val();
+	var ttMinV = $("#ttMin").val();
+	var ttSecV = parseInt($("#ttSec").val())||0;
 
-	var paceHourConV = paceHourV * 3600;
-	var paceMinConV = paceMinV * 60;
-	var paceConv = paceHourConV + paceMinConV + paceSecV;
+	var paceConv = (paceHourV*3600) + (paceMinV*60) + paceSecV;
 
-	var ttHourConV = ttHourV * 3600;
-	var ttMinConV = ttMinV * 60;
-	var ttConv = ttHourConV + ttMinConV + ttSecV;
+	var ttConv = (ttHourV*3600) + (ttMinV*60) + ttSecV;
 
 	var totalTime = 0;
 
@@ -68,8 +64,6 @@ $("#runButton").on("click", function(){
 	console.log(paceHourV);
 	console.log(paceMinV);
 	console.log(paceSecV);
-	console.log(paceHourConV);
-	console.log(paceMinConV);
 	console.log(paceConv);
 
 		if((paceHourV > 0 || paceMinV > 0 || paceSecV > 0) && (distanceV > 0)){
